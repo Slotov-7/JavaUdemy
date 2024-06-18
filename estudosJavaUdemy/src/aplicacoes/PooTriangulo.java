@@ -4,9 +4,7 @@ import entites.Triangulo;
 
 import java.util.Scanner;
 
-import entites.Triangulo;
-
-public class ProblemaCPoo {
+public class PooTriangulo {
     public static void main(String[] args) {
         double areaX, areaY;
 
