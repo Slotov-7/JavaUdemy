@@ -2,9 +2,11 @@ package vetores;
 
 import java.util.Scanner;
 
-public class NegativeNumber {
+public class MaxPosition {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        double value = Double.MIN_VALUE;
+        int position = 0;
         System.out.println("How many numbers will you type?");
         int quantity = scanner.nextInt();
         scanner.nextLine();
@@ -15,11 +17,17 @@ public class NegativeNumber {
             vector[i] = scanner.nextInt();
             scanner.nextLine();
         }
-        System.out.println("Negative Numbers:");
         for (int j : vector) {
-            if (j < 0) {
-                System.out.printf("%d %n", j);
+            if (j > value) {
+                value = j;
             }
         }
+        for (int i = 0; i < vector.length; i++){
+            if(vector[i] == value){
+                position = i;
+            }
+        }
+        System.out.printf("Greater value: %f",value);
+        System.out.printf("Position of greater value: %d",position);
     }
 }
