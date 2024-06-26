@@ -4,7 +4,7 @@ import entites.Person;
 
 import java.util.Scanner;
 
-public class Older {
+public class Older212 {
     public static void main(String[] args) {
         int value = Integer.MIN_VALUE;
         String older = "";
